@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech text of Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1 class="hero__title">Text To Speech <span class="title__item">Converter</span></h1>
+        <textarea placeholder="Write something here..." name="" id="" cols="30" rows="10"></textarea>
+        <div class="row">
+            <select></select>
+            <button id="btn__Listen"><i class="fa fa-play" aria-hidden="true"></i> Listen</button>
+        </div>
+        <div class="buttons">
+            <button id="btn__Pause"><i class="fa fa-pause" aria-hidden="true"></i> PAUSE</button>
+            <button id="btn__Resume"><i class="fa fa-pause" aria-hidden="true"></i><i class="fa fa-play" aria-hidden="true"></i> RESUME</button>
+            <button id="btn__Stop"><i class="fa fa-stop" aria-hidden="true"></i> STOP</button>
+        </div>
+        <div class="roll">
+            <label for="volumeInput">Volume: (<span class="volume-value">1</span>)</label>
+            <input type="range" id="volumeInput" min="0" max="11" step="0.1" value="1">
+            <label for="pitchInput">Pitch: (<span class="pitch-value">1</span>)</label>
+            <input type="range" id="pitchInput" min="0" max="2" step="0.1" value="1">
+            <label for="rateInput">Rate: (<span class="rate-value">1</span>)</label>
+            <input type="range" id="rateInput" min="0.5" max="2" step="0.1" value="1">
+        </div>
+    </div>
+    <script src="boldscript.js"></script>
+</body>
+</html>

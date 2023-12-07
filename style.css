@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background:#f7f7f7 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero__title{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-family: 'Luckiest Guy', cursive;
+    color: #929aab;
+}
+
+.title__item{
+    color:#393e46;
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #eeeeee;
+    color: black;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+textarea::placeholder{
+    font-size: 30px;
+    color:#929aab
+}
+
+
+.row{
+    width: 600px;
+    display:flex ;
+    align-items: center;
+    gap: 20px;
+}
+
+#btn__Listen{
+    background: #929aab ;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#btn__Listen__img{
+    width: 16px;
+    margin-right:10px ;
+}
+
+select{
+    flex: 1;
+    color: black;
+    background: #929aab;
+    height: 50px;
+    padding: 0 20px;
+    outline:0;
+    border: 0;
+    border-radius: 35px;
+    background-image:url(img/caret-down.png) ;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x:415px;
+    background-position-y:20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#btn__Read,#btn__Pause,#btn__Resume,#btn__Stop{
+    background: #929aab ;
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+.roll{
+    margin-top: 20px;
+}
+
+#volumeInput{
+    font-family: 'Oswald', sans-serif;
+}
