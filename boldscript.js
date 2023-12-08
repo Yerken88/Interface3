@@ -19,7 +19,7 @@ window.speechSynthesis.onvoiceschanged=()=>{
     voices.forEach((voice,i)=>(voicesSelect.options[i]=new Option(voice.name,i)));
 };
 
-document.querySelector('.listen').addEventListener('click',()=>{
+document.querySelector('#btn__Listen').addEventListener('click',()=>{
     speech.text=document.querySelector('textarea').value;
     window.speechSynthesis.speak(speech)
 });

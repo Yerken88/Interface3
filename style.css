@@ -108,6 +108,39 @@ select{
     margin-top: 20px;
 }
 
-#volumeInput{
-    font-family: 'Oswald', sans-serif;
-}
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+    -webkit-appearance: none;
+     appearance: none;
+     background: transparent;
+     cursor: pointer;
+     width: 150px;
+ }
+ 
+ /* Removes default focus */
+ input[type="range"]:focus {
+   outline: none;
+ }
+ 
+ /***** Chrome, Safari, Opera and Edge Chromium styles *****/
+ /* slider track */
+ input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #929aab;
+    border-radius: 0.5rem;
+    height: 0.5rem;  
+ }
+ 
+ /* slider thumb */
+ input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -12px; /* Centers thumb on the track */
+ 
+    /*custom styles*/
+    background-color: #393e46;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 2rem;
+    width: 15px;
+ }
